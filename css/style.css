@@ -1,3 +1,19 @@
+.label-container{
+    display: flex;
+    align-items: center;
+}
+
+label{
+    font-size: larger;
+}
+
+input{
+    width: 100%;
+    padding: 8px;
+    margin: 4px;
+    box-sizing: border-box;
+}
+
 table{
     border-collapse: collapse;
     width: 100%
