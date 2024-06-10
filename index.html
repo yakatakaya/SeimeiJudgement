@@ -114,27 +114,27 @@
                 output_zin_kakusu.textContent = parseInt(input_s_2.value) + parseInt(input_m_1.value);
                 output_so_kakusu.textContent = parseInt(input_s_1.value) + parseInt(input_s_2.value) + parseInt(input_m_1.value) + parseInt(input_m_2.value);
 
-                if (ten_sample.includes(output_ten_kakusu.textContent)){
+                if (ten_sample.includes(parseInt(output_ten_kakusu.textContent))){
                     output_ten_kichi.textContent = "〇"
                 }else{
                     output_ten_kichi.textContent = "×"
                 }
-                if (zi_sample.includes(output_zi_kakusu.textContent)){
+                if (zi_sample.includes(parseInt(output_zi_kakusu.textContent))){
                     output_zi_kichi.textContent = "〇"
                 }else{
                     output_zi_kichi.textContent = "×"
                 }
-                if (gai_sample.includes(output_gai_kakusu.textContent)){
+                if (gai_sample.includes(parseInt(output_gai_kakusu.textContent))){
                     output_gai_kichi.textContent = "〇"
                 }else{
                     output_gai_kichi.textContent = "×"
                 }
-                if (zin_sample.includes(output_zin_kakusu.textContent)){
+                if (zin_sample.includes(parseInt(output_zin_kakusu.textContent))){
                     output_zin_kichi.textContent = "〇"
                 }else{
                     output_zin_kichi.textContent = "×"
                 }
-                if (so_sample.includes(output_so_kakusu.textContent)){
+                if (so_sample.includes(parseInt(output_so_kakusu.textContent))){
                     output_so_kichi.textContent = "〇"
                 }else{
                     output_so_kichi.textContent = "×"
