@@ -77,11 +77,11 @@
             input_m_2.addEventListener("input", updateTable);
 
             function updateTable(){
-                output_ten_kakusu.textContent = input_s_1.value + input_s_2.value;
-                output_zi_kakusu.textContent = input_m_1.value + input_m_2.value;
-                output_gai_kakusu.textContent = input_s_1.value + input_m_2.value;
-                output_zin_kakusu.textContent = input_s_2.value + input_m_1.value;
-                output_zin_kakusu.textContent = input_s_1.value + input_s_2.value + input_m_1.value + input_m_2.value;
+                output_ten_kakusu.textContent = parseInt(input_s_1.value) + parseInt(input_s_2.value);
+                output_zi_kakusu.textContent = parseInt(input_m_1.value) + parseInt(input_m_2.value);
+                output_gai_kakusu.textContent = parseInt(input_s_1.value) + parseInt(input_m_2.value);
+                output_zin_kakusu.textContent = parseInt(input_s_2.value) + parseInt(input_m_1.value);
+                output_zin_kakusu.textContent = parseInt(input_s_1.value) + parseInt(input_s_2.value) + parseInt(input_m_1.value) + parseInt(input_m_2.value);
             }
 
         </script>
