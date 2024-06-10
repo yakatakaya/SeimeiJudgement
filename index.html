@@ -48,12 +48,42 @@
                     <td id="gai_kichi"></td>
                 </tr>
                 <tr>
+                    <td>人</td>
+                    <td id="zin_kakusu"></td>
+                    <td id="zin_kichi"></td>
+                </tr>
+                <tr>
                     <td>総</td>
                     <td id="so_kakusu"></td>
                     <td id="so_kichi"></td>
                 </tr>
             </tbody>
         </table>
+        <script>
+            const input_s_1 = document.getElementById("s_1");
+            const input_s_2 = document.getElementById("s_2");
+            const input_m_1 = document.getElementById("m_1");
+            const input_m_2 = document.getElementById("m_2");
 
+            const output_ten_kakusu = document.getElementById("ten_kakusu");
+            const output_zi_kakusu = document.getElementById("zi_kakusu");
+            const output_gai_kakusu = document.getElementById("gai_kakusu");
+            const output_zin_kakusu = document.getElementById("zin_kakusu");
+            const output_so_kakusu = document.getElementById("so_kakusu");
+
+            input_s_1.addEventListener("input", updateTable);
+            input_s_2.addEventListener("input", updateTable);
+            input_m_1.addEventListener("input", updateTable);
+            input_m_2.addEventListener("input", updateTable);
+
+            function updateTable(){
+                output_ten_kakusu.textContent = input_s_1 + input_s_2;
+                output_zi_kakusu.textContent = input_m_1 + input_m_2;
+                output_gai_kakusu.textContent = input_s_1 + input_m_2;
+                output_zin_kakusu.textContent = input_s_2 + input_m_1;
+                output_zin_kakusu.textContent = input_s_1 + input_s_2 + input_m_1 + input_m_2;
+            }
+
+        </script>
     </body>
 </html>
