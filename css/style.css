@@ -3,6 +3,10 @@
     align-items: center;
 }
 
+.smaller-font{
+    font-size: smaller;
+}
+
 label{
     white-space: nowrap;
 }
@@ -28,3 +32,4 @@ th, td{
 th{
     background-color: #f2f2f2;
 }
+
