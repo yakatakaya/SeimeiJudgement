@@ -28,7 +28,8 @@
                 <tr>
                     <th>各</th>
                     <th>画数</th>
-                    <th>吉/凶</th>
+                    <th>大吉/中吉/凶</th>
+                    <th>中吉以上の画数</th>
                 </tr>
             </thead>
             <tbody>
@@ -36,26 +37,31 @@
                     <td>天</td>
                     <td id="ten_kakusu"></td>
                     <td id="ten_kichi"></td>
+                    <td id="ten_sample"></td>
                 </tr>
                 <tr>
                     <td>地</td>
                     <td id="zi_kakusu"></td>
-                    <td id="ten_kichi"></td>
+                    <td id="zi_kichi"></td>
+                    <td id="zi_sample"></td>
                 </tr>
                 <tr>
                     <td>外</td>
                     <td id="gai_kakusu"></td>
                     <td id="gai_kichi"></td>
+                    <td id="gai_sample"></td>
                 </tr>
                 <tr>
                     <td>人</td>
                     <td id="zin_kakusu"></td>
                     <td id="zin_kichi"></td>
+                    <td id="zin_sample"></td>
                 </tr>
                 <tr>
                     <td>総</td>
                     <td id="so_kakusu"></td>
                     <td id="so_kichi"></td>
+                    <td id="so_sample"></td>
                 </tr>
             </tbody>
         </table>
@@ -71,6 +77,25 @@
             const output_zin_kakusu = document.getElementById("zin_kakusu");
             const output_so_kakusu = document.getElementById("so_kakusu");
 
+            const output_ten_kichi = document.getElementById("ten_kichi");
+            const output_zi_kichi = document.getElementById("zi_kichi");
+            const output_gai_kichi = document.getElementById("gai_kichi");
+            const output_zin_kichi = document.getElementById("zin_kichi");
+            const output_so_kichi = document.getElementById("so_kichi");
+
+            const output_ten_sample = document.getElementById("ten_sample");
+            const output_zi_sample = document.getElementById("zi_sample");
+            const output_gai_sample = document.getElementById("gai_sample");
+            const output_zin_sample = document.getElementById("zin_sample");
+            const output_so_sample = document.getElementById("so_sample");
+
+            output_ten_sample.textContent = [1,2,3,4,5];
+            output_zi_sample.textContent = [6,7,8,9,10];
+            output_gai_sample.textContent = [11,12,13,14,15];
+            output_zin_sample.textContent = [16,17,18,19,20];
+            output_so_sample.textContent = [21,22,23,24,25];
+
+
             input_s_1.addEventListener("input", updateTable);
             input_s_2.addEventListener("input", updateTable);
             input_m_1.addEventListener("input", updateTable);
@@ -81,7 +106,7 @@
                 output_zi_kakusu.textContent = parseInt(input_m_1.value) + parseInt(input_m_2.value);
                 output_gai_kakusu.textContent = parseInt(input_s_1.value) + parseInt(input_m_2.value);
                 output_zin_kakusu.textContent = parseInt(input_s_2.value) + parseInt(input_m_1.value);
-                output_zin_kakusu.textContent = parseInt(input_s_1.value) + parseInt(input_s_2.value) + parseInt(input_m_1.value) + parseInt(input_m_2.value);
+                output_so_kakusu.textContent = parseInt(input_s_1.value) + parseInt(input_s_2.value) + parseInt(input_m_1.value) + parseInt(input_m_2.value);
             }
 
         </script>
